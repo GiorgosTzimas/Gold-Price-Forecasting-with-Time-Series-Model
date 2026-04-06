@@ -29,7 +29,7 @@ https://www.kaggle.com/datasets/sahilwagh/gold-stock-prices
 
 **Features used:**
 - `Date`  
-- `Close`  
+- `Close` (closing price) 
 
 Data was aggregated to **monthly frequency** by selecting the last available price of each month.
 
@@ -84,18 +84,16 @@ The analysis follows a standard time series workflow:
 ```
 gold-price-forecasting/
 │
-├── gold_price_forecasting.ipynb
-├── gold_price_forecasting_report.pdf
-└── README.md
+├── README.md
+├── gold_price_forecasting.R
+└── gold_price_forecasting_report.pdf
 ```
 
 ---
 
 ## Report
 
-A detailed explanation of the methodology, model selection, and evaluation is available in:
-
-`gold_price_forecasting_report.pdf`
+A detailed explanation of the methodology, model selection, and evaluation is available in: `gold_price_forecasting_report.pdf`
 
 ---
 
