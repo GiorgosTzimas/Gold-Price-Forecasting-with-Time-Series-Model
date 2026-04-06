@@ -21,9 +21,8 @@ The dataset that utilized can be found here: <a href="https://www.kaggle.com/dat
 - Time range: January 2014 – January 2024
 - Original frequency: Daily
 - Used features:
-
- - `Date`
- - `Close price`
+ -- `Date`
+ -- `Close price`
 
 Data was aggregated to monthly frequency by selecting the last available price of each month.
 
