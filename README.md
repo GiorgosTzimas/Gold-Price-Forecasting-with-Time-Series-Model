@@ -2,7 +2,6 @@
 
 This project explores time series forecasting techniques applied to gold prices. The focus is on understanding how classical statistical models perform on financial data and what insights they can provide.
 
----
 
 ## Project Overview
 
@@ -15,7 +14,6 @@ Gold is widely used as a hedge against uncertainty, but its price is influenced 
 
 This project is designed as a learning exercise, focusing on model behavior and limitations rather than production deployment.
 
----
 
 ## Dataset
 
@@ -33,7 +31,6 @@ https://www.kaggle.com/datasets/sahilwagh/gold-stock-prices
 
 Data was aggregated to **monthly frequency** by selecting the last available price of each month.
 
----
 
 ## Approach
 
@@ -50,7 +47,6 @@ The analysis follows a standard time series workflow:
 - ETS (Exponential Smoothing)  
 - Naive benchmark  
 
----
 
 ## Key Insights
 
@@ -60,7 +56,6 @@ The analysis follows a standard time series workflow:
 - ETS captures trend more effectively and performs better overall  
 - All models struggle to reflect real market volatility  
 
----
 
 ## Practical Implications
 
@@ -69,7 +64,6 @@ The analysis follows a standard time series workflow:
 - Classical statistical models may not capture complex market dynamics  
 - Forecasts should be combined with external economic information  
 
----
 
 ## Tools Used
 
@@ -77,7 +71,6 @@ The analysis follows a standard time series workflow:
 - `forecast`, `fpp2`, `fpp3`  
 - `ggplot2`, `dplyr`  
 
----
 
 ## Project Structure
 
@@ -89,13 +82,11 @@ gold-price-forecasting/
 └── gold_price_forecasting_report.pdf
 ```
 
----
 
 ## Report
 
 A detailed explanation of the methodology, model selection, and evaluation is available in: `gold_price_forecasting_report.pdf`
 
----
 
 ## Notes
 
