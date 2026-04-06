@@ -1,84 +1,104 @@
-# Gold-Price-Forecasting-with-Time-Series-Model
+# Gold Price Forecasting with Time Series Models
 
-This project explores time series forecasting techniques applied to gold prices. The focus lies on understanding how classical statistical models perform on financial data and what insights they can provide.
+This project explores time series forecasting techniques applied to gold prices. The focus is on understanding how classical statistical models perform on financial data and what insights they can provide.
+
+---
 
 ## Project Overview
 
-Gold is widely used as a hedge against uncertainty, but its price is influenced by a combination of macroeconomic, geopolitical, and market-specific factors. This makes forecasting challenging.
+Gold is widely used as a hedge against uncertainty, but its price is influenced by macroeconomic, geopolitical, and market-specific factors. This makes forecasting challenging.
 
-The goal of this project is to:
+**Objectives:**
+- Analyze historical gold price behavior  
+- Apply time series models  
+- Evaluate how well these models capture trends and generate forecasts  
 
-- Analyze historical gold price behavior
-- Apply time series models
-- Evaluate how well these models capture trends and generate forecasts
+This project is designed as a learning exercise, focusing on model behavior and limitations rather than production deployment.
 
-The focus is on learning model behavior and limitations rather than building a production-ready system.
+---
 
-## Dataset 
+## Dataset
 
-The dataset that utilized can be found here: <a href="https://www.kaggle.com/datasets/sahilwagh/gold-stock-prices" style="text-decoration: underline;">here</a>
-- Source: Kaggle
-- Time range: January 2014 – January 2024
-- Original frequency: Daily
-- Used features:
- -- `Date`
- -- `Close price`
+Dataset available on Kaggle:  
+https://www.kaggle.com/datasets/sahilwagh/gold-stock-prices  
 
-Data was aggregated to monthly frequency by selecting the last available price of each month.
+**Details:**
+- Source: Kaggle  
+- Time range: January 2014 – January 2024  
+- Original frequency: Daily  
+
+**Features used:**
+- `Date`  
+- `Close`  
+
+Data was aggregated to **monthly frequency** by selecting the last available price of each month.
+
+---
 
 ## Approach
 
 The analysis follows a standard time series workflow:
 
-- Data transformation (log transformation, differencing)
-- Stationarity testing (ADF, KPSS)
-- Decomposition (trend, seasonality, residuals)
-- Structural break analysis (COVID-19 period)
-- Model implementation and comparison
+**Preprocessing and analysis:**
+- Log transformation and differencing  
+- Stationarity testing (ADF, KPSS)  
+- Decomposition (trend, seasonality, residuals)  
+- Structural break analysis (COVID-19 period)  
 
-Models used:
+**Models used:**
+- ARIMA  
+- ETS (Exponential Smoothing)  
+- Naive benchmark  
 
-- ARIMA
-- ETS (Exponential Smoothing)
-- Naive benchmark
+---
 
 ## Key Insights
 
-- Gold prices show a strong long-term upward trend
-- No consistent seasonality was detected
-- ARIMA behaves like a random walk, producing flat forecasts
-- ETS captures trend more effectively and performs better overall
-- All models struggle to reflect real market volatility
+- Gold prices show a strong long-term upward trend  
+- No consistent seasonality was detected  
+- ARIMA behaves like a random walk, producing flat forecasts  
+- ETS captures trend more effectively and performs better overall  
+- All models struggle to reflect real market volatility  
+
+---
 
 ## Practical Implications
 
-- Gold is often used for risk management and portfolio diversification
-- Understanding model limitations is important for realistic expectations
-- Simple statistical models may not be sufficient for volatile financial markets
-- Forecasts should be interpreted cautiously and combined with external factors
+- Gold is widely used for portfolio diversification and risk management  
+- Model limitations must be considered when interpreting forecasts  
+- Classical statistical models may not capture complex market dynamics  
+- Forecasts should be combined with external economic information  
+
+---
 
 ## Tools Used
 
-- R
-- forecast, fpp2, fpp3
-- ggplot2, dplyr
+- R  
+- `forecast`, `fpp2`, `fpp3`  
+- `ggplot2`, `dplyr`  
+
+---
 
 ## Project Structure
 
-- gold_price_forecasting.ipynb → main analysis
-- gold_price_forecasting_report.pdf → full report
-- README.md → project overview
+```
+gold-price-forecasting/
+│
+├── gold_price_forecasting.ipynb
+├── gold_price_forecasting_report.pdf
+└── README.md
+```
+
+---
 
 ## Report
 
 A detailed explanation of the methodology, model selection, and evaluation is available in:
 
-gold_price_forecasting_report.pdf
+`gold_price_forecasting_report.pdf`
+
+---
 
 ## Notes
 
 This project was developed as a learning exercise in time series analysis. The focus is on applying core concepts, interpreting results, and understanding the limitations of classical forecasting models in financial contexts.
-
-
-
-
